@@ -62,7 +62,7 @@ public class AuthRegController : ControllerBase
     }
 
     [HttpPost]
-    [Route("")]
+    [Route("Reg")]
     public async Task<IResult> Reg(UserRegRequest req)
     {
         string userId = this.HttpContext?.User?.FindFirstValue("id");
